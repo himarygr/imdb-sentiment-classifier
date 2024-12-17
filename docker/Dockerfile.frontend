@@ -1,0 +1,14 @@
+# Use Python slim image
+FROM python:3.9-slim
+
+# Set working directory
+WORKDIR /app
+
+# Copy frontend files
+COPY frontend/ /app/
+
+# Expose frontend port
+EXPOSE 8501
+
+# Use Python HTTP server to serve static files
+CMD ["python", "-m", "http.server", "8501"]
