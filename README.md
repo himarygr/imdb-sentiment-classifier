@@ -4,6 +4,12 @@
 This project implements a machine learning pipeline to classify IMDB movie reviews into Positive or Negative sentiments. The pipeline includes data preprocessing, model training, evaluation, and a web-based interface for predictions. The project is fully containerized using Docker and uses Neptune.ai for experiment tracking and visualization.
 
 ---
+### Example of negative prediction
+![Confusion Matrix](frontend/static/neg.png)
+
+### Example of positive prediction
+![ROC-AUC Curve](frontend/static/pos.png)
+---
 
 ## 🚀 **Features**
 1. **Data Preprocessing**: Cleaning and vectorizing movie reviews using TF-IDF.
@@ -158,6 +164,9 @@ All experiments, metrics, and visualizations are logged to **Neptune.ai**.
 - Hyperparameter values
 - CPU/Memory usage during training
 
+---
+### Neptune dashboard
+![Neptune dashboard](frontend/static/dash.png)
 ---
 
 ## 🔮 **Future Improvements**
